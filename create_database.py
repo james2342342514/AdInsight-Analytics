@@ -36,7 +36,7 @@ end_date = datetime.date(2023, 12, 31)
 campaign_ids = [f'CAMP_{i:03d}' for i in range(1, 11)]
 platforms = ['Google Ads', 'Facebook Ads', 'Instagram Ads', 'LinkedIn Ads']
 
-# Insert 10,000 rows of mock data
+# Insert 1000 rows of mock data
 for _ in range(10000):
     date = random_date(start_date, end_date)
     campaign_id = random.choice(campaign_ids)
@@ -60,4 +60,4 @@ for _ in range(10000):
 conn.commit()
 conn.close()
 
-print("Database 'ad_campaigns.db' created with 10,000 rows of mock data.")
+print("Database 'ad_campaigns.db' created with 10000 rows of mock data.")
